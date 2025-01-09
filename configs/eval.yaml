@@ -1,0 +1,16 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - hparams: default
+  - data: default # choose datamodule with `test_dataloader()` for evaluation
+  - model: default
+  - logger: null
+  - trainer: gpu
+  - paths: default
+  - extras: default
+  - hydra: default
+
+task_name: "eval"
+train: False
+tags: ["dev"]

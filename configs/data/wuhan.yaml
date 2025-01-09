@@ -1,0 +1,29 @@
+_target_: src.data.DataModule
+dataset: ${dataset}
+batch_size: ${batch_size}
+num_workers: ${num_workers}
+pin_memory: true
+train_mode: ${train}
+args:
+  images_root: data/whu3d/images
+  sem_root: data/whu3d/semantic
+  confidence_root: data/whu3d/confidence
+  points_root: data/whu3d/point_cloud
+  caminfo_root: data/whu3d/INSPose.txt
+  depth_root: data/whu3d/depth
+  mask_root: data/whu3d/mask.npy
+  dymanic_mask_root: data/whu3d/dynamic_mask
+  
+  scene: ${scene}
+  start: ${start}
+  end: ${end} 
+  near: ${near} 
+  far: ${far} 
+  dist: ${dist} 
+  samples_all: ${samples_all} 
+  N_rays: ${N_rays} 
+  class_num: ${class_num}
+  center_pose: ${center_pose}
+  depth_threhold: ${depth_threhold}
+  pretrained_2d_model: ${pretrained_2d_model}
+  use_sky: ${use_sky}

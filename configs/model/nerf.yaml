@@ -1,0 +1,61 @@
+_target_: src.models.nerf_module.NerfModule
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.001
+  weight_decay: 0.0
+
+scheduler:
+  _target_: src.optim.lr_scheduler.ExponentialLR
+  _partial_: true
+  gamma: 0.5
+  decay_epochs: 80
+  
+
+net:
+  _target_: src.models.components.nerf_render.Network
+  nerf_0: 
+    _target_: src.models.components.nerf_mlp.NeRF
+    D: 8
+    W: 256
+    fr_pos: 15
+    fr_view: 4
+    skips: [4]
+    class_num: ${class_num}
+  mlp_decoder:
+    _target_: src.models.components.semantic_decoder.mlp_decoder
+    D: 8
+    W: 256
+    fr_rgb: 15
+    skips: [4]
+    class_num: ${class_num}
+    pts_feat_num: ${pts_feats_num}
+    use_point_color: ${use_point_color}
+    use_point_intensity: ${use_point_intensity}
+  args:
+    near: ${near}
+    far: ${far}
+    samples_all: ${samples_all}
+    chunk_size: ${chunk_size}
+    train_params: ${train_params}
+    dist: ${dist}
+    center_pose: ${center_pose}
+    sample_radius: ${sample_radius}
+    start: ${start}
+    end: ${end}
+    voxel_size: ${voxel_size}
+    superpoint_root: ${superpoint_root}
+    visible_root: ${visible_root}
+    class_num: ${class_num}
+    height_scale: ${height_scale}
+    pts_feats_num: ${pts_feats_num}
+    pts_num_per_sp: ${pts_num_per_sp}
+    use_confidence: ${use_confidence}
+    use_point_color: ${use_point_color}
+    use_point_intensity: ${use_point_intensity}
+    scene: ${scene}
+    dataset: ${dataset}
+    random_superpoint_nums: ${random_superpoint_nums}
+    output_root: ${output_root}
+    points_root: ${points_root}

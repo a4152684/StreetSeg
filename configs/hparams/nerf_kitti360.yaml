@@ -1,0 +1,52 @@
+# @package _global_
+batch_size: 4
+num_workers: 8
+
+# seed for random number generators in pytorch, numpy and python.random
+seed: 2023
+
+# monitor metric
+monitor: "RMSE"
+
+base_lr: 0.001
+
+points_root: "data/kitti360/data_3d_semantics/train/2013_05_28_drive_0000_sync/static"
+
+center_pose: False
+dist: False
+
+scene: 1
+dataset: kitti360
+random_superpoint_nums: 5000
+
+voxel_size: 0.3
+near: 0.5
+far: 100
+sample_radius: 0.5
+samples_all: 32
+chunk_size: 4096
+random_points_num_vis: 4000
+random_points_num_novis: 2000
+N_rays: 4096
+train_interval: 1
+val_interval: 100
+superpoint_root: data/kitti360/superpoint
+visible_root: data/kitti360/superpoint
+height_scale: 20
+pts_feats_num: 32
+pts_num_per_sp: 128
+pad_nums: 0
+use_1th_cam: False
+use_confidence: True
+use_point_color: False
+use_point_intensity: False
+pretrained_2d_model: segformer  #['mask2former', 'segformer', 'deeplab']
+depth_threhold: 200
+is_sp_log: False
+class_num: 11
+
+train_params:
+  weight_color: 1.0
+  lambda_semantic_2d: 1.0
+  semantic_weight : 0.03
+  lambda_depth: 0.1 

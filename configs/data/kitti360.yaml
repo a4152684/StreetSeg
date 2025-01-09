@@ -1,0 +1,40 @@
+_target_: src.data.DataModule
+dataset: kitti360
+batch_size: ${batch_size}
+num_workers: ${num_workers}
+pin_memory: true
+train_mode: ${train}
+args:
+  cam2world_root: data/kitti360/2013_05_28_drive_0000_sync/cam0_to_world.txt
+  images_root: data/kitti360/2013_05_28_drive_0000_sync
+  data_root: data/kitti360
+  sem_root: data/kitti360/2013_05_28_drive_0000_sync
+  confidence_root: data/kitti360/2013_05_28_drive_0000_sync
+  depth_root: data/kitti360/2013_05_28_drive_0000_sync
+  image_feat_root: data/kitti360/2013_05_28_drive_0000_sync
+  visible_root: ${visible_root}
+  superpoint_root: ${superpoint_root}
+
+  start: ${start}
+  end: ${end}
+  train_interval: ${train_interval}
+  val_interval: ${val_interval}
+  center_pose: ${center_pose}
+  points_3d_dir: ${points_3d_dir}
+  dist: ${dist}
+  samples_all: ${samples_all}
+  near: ${near}
+  far: ${far}
+  sample_radius: ${sample_radius}
+  N_rays: ${N_rays}
+  class_num: ${class_num}
+  random_points_num_vis: ${random_points_num_vis}
+  random_points_num_novis: ${random_points_num_novis}
+
+  points_root: ${points_root}
+  voxel_size: ${voxel_size}
+  pad_nums: ${pad_nums}
+  use_2d_gt: ${use_2d_gt}
+  use_1th_cam: ${use_1th_cam}
+  pretrained_2d_model: ${pretrained_2d_model}
+  depth_threhold: ${depth_threhold}
