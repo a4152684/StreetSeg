@@ -18,9 +18,11 @@ Moreover, we introduce a dynamic object filter and a pose adjustment module to a
 The proposed approach has shown promising outcomes on two street scene datasets, namely KITTI-360 and WHU-Urban3D, highlighting the effectiveness and reliability of our method.*
 
 ## Dataset
-
-- [WHU-Urban 3D](https://whu3d.com);
+Download the two datasets:
+- [WHU-Urban 3D](https://whu3d.com), for mls-w data in Wuhan city;
 - [KITTI-360](https://www.cvlibs.net/datasets/kitti-360);
+For pseudo-labels, refer to [SegFormer](https://github.com/NVlabs/SegFormer), [Mask2Former](https://github.com/facebookresearch/Mask2Former) or other image semantic segmentation methods.
+For superpoint generation, refer to [Lin et al](https://github.com/yblin/Supervoxel-for-3D-point-clouds).
 
 ## Install & Run
 
