@@ -3,7 +3,7 @@
 **Cross-modal Semantic Transfer for Point Cloud Semantic Segmentation**
 <br>Zhen Cao, Xiaoxin Mi, Bo Qiu, Zhipeng Cao, Chen Long, Xinrui Yan, Chao Zheng, Zhen Dong, Bisheng Yang<br>
 
-![StreetRecon](assets/overview.png)
+![StreetSeg](assets/overview.png)
 
 Abstract: *3D street scene semantic segmentation is essential for urban understanding. 
 However, supervised point cloud semantic segmentation networks heavily rely on expensive manual annotations and demonstrate limited generalization capabilities across datasets, which poses limitations in a range of downstream tasks. 
@@ -17,14 +17,10 @@ Then, we design a superpoint semantic module to capture the local geometric feat
 Moreover, we introduce a dynamic object filter and a pose adjustment module to address the spatio-temporal misalignment between point clouds and images, further enhancing the consistency of the transferred semantic labels. 
 The proposed approach has shown promising outcomes on two street scene datasets, namely KITTI-360 and WHU-Urban3D, highlighting the effectiveness and reliability of our method.*
 
-## Introduce
+## Dataset
 
-This repository provides three core modules of our whole project: 
-- The adaptive photometric constraint weighting method in `modules/adaptive_weight`;
-- The B-spline-based hierarchical hash encoder in `modules/B_spline_hash_encoder`;
-- SDF label computing within the spatial hash grid in `modules/udf_in_svh`.
-  
-In each module, we provide a demo to present how to use the module.
+- [WHU-Urban 3D](https://whu3d.com);
+- [KITTI-360](https://www.cvlibs.net/datasets/kitti-360);
 
 ## Install & Run
 
