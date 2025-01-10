@@ -3,7 +3,7 @@
 **Cross-modal Semantic Transfer for Point Cloud Semantic Segmentation**
 <br>Zhen Cao, Xiaoxin Mi, Bo Qiu, Zhipeng Cao, Chen Long, Xinrui Yan, Chao Zheng, Zhen Dong, Bisheng Yang<br>
 
-![StreetSeg](assets/overview.png)
+![StreetSeg](assets/overview.jpg)
 
 Abstract: *3D street scene semantic segmentation is essential for urban understanding. 
 However, supervised point cloud semantic segmentation networks heavily rely on expensive manual annotations and demonstrate limited generalization capabilities across datasets, which poses limitations in a range of downstream tasks. 
