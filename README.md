@@ -34,9 +34,9 @@ To train/test the method on WHU-Urban3D dataset, you can edit the parameter in t
 sh scripts/wuhan.sh
 ```
 
-For KITTI-360 dataset, you can edit the parameter in the file ```kitti.sh```, and run:
+For KITTI-360 dataset, you can edit the parameter in the file ```kitti360.sh```, and run:
 
 ```bash
-sh scripts/kitti.sh
+sh scripts/kitti360.sh
 ```
 
