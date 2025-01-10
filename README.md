@@ -28,9 +28,15 @@ For superpoint generation, refer to [Lin et al](https://github.com/yblin/Supervo
 
 ## Run
 
-Run demo:
+To train/test the method on WHU-Urban3D dataset, you can edit the parameter in the file ```wuhan.sh```, and run:
 
 ```bash
 sh scripts/wuhan.sh
+```
+
+For KITTI-360 dataset, you can edit the parameter in the file ```kitti.sh```, and run:
+
+```bash
+sh scripts/kitti.sh
 ```
 
