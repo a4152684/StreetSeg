@@ -1,4 +1,5 @@
 # StreetSeg
+Please refer to [https://github.com/WHU-USI3DV/StreetSeg](https://github.com/WHU-USI3DV/StreetSeg)
 
 **Cross-modal Semantic Transfer for Point Cloud Semantic Segmentation**
 <br>Zhen Cao, Xiaoxin Mi, Bo Qiu, Zhipeng Cao, Chen Long, Xinrui Yan, Chao Zheng, Zhen Dong, Bisheng Yang<br>
